@@ -38,6 +38,35 @@ html, body{
     }
 }
 
+.btn-black{
+    background-color: #191919;
+    border:1px solid #191919;
+    color: #fff;
+    text-decoration: none;
+
+    // creates more room for the text, and a larger button
+    padding: 12px 30px;
+
+    // 600 in font-weight is semi-bold
+    font-weight: 600;
+
+    // border-radius creates a more rounder form of a button
+    border-radius: 25px;
+
+    // settings for when we hover over the button
+    &:hover{
+        background-color: #fff;
+        border: 1px solid #191919;
+        color: #191919;
+    }
+
+    // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px. 
+    i{
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+}
+
 .btn-transparent{
     background-color: transparent;
     border:1px solid #191919;
@@ -59,12 +88,46 @@ html, body{
     }
 }
 
+.section-title{
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+
+    @media (min-width: 768px) {
+        padding-top: 120px;
+        padding-bottom: 90px;
+        
+    }
+
+    p{
+        color: #F94D1C;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+
+        margin: 10px;
+    }
+
+    h2{
+        color:#191919;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+    }
+}
+
 
 .wrapper-grid{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+}
+
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header{
@@ -322,6 +385,9 @@ main{
          //to create som distanse from the next part
          margin-bottom: 30px;
         
+         img{
+            width: 100%;
+         }
 
 
 
@@ -334,29 +400,68 @@ main{
        
     }
 
-    // .features{
-    //     padding-top: 80px;
-    //     padding-bottom: 80px;
-    //     margin-bottom: 80px;
-    //     display: grid;
+    .project-and-case{
+        .container{
 
-    //     gap: 50px;
+            .section-title{
+                text-align: center;
+            }
 
-    //     align-items: center;
-    //     justify-content: center;
+            .project-and-cases{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 30px;
 
-    //     grid-template-columns: repeat(auto-fit, minmax(30px, 300px));
-    //     grid-template-areas: 
-    //     "accounting ba sb"
-    //     "accounting fa rm";
+                @media (min-width: 720px) {
+                    grid-template-columns: 1fr 1fr;
+                }
 
-        
+                .project{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto 1fr auto;
+                    color: #191919;
+                    text-decoration: none;
 
-    //     .out-accounting{grid-area: accounting;}
-    //     .business-advice{grid-area: ba;}
-    //     .financial-advice{grid-area: fa;}
-    //     .startup-business{grid-area: sb;}
-    //     .risk-management{grid-area: rm;}
-    // } kommenterar bort denna funktion då jag inte fått det att fungera än
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
 
+                    h3{
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                        padding-top: 35px;
+                        padding-bottom: 16px;
+                        border-bottom: 1px solid #1919191a;
+                    }
+
+                    .readmore{
+                        padding: 15px;
+                        display: block;
+                        text-align: right;
+                        color: #191919;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                        text-decoration: none;
+
+                        i{
+                            margin-left: 3px;
+                        }
+
+                    }
+
+                    &:hover .readmore{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        .center-content{
+            margin-top: 50px;
+            margin-bottom: 90px;
+        }
+        }
+    }
 }

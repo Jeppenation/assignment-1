@@ -27,6 +27,25 @@ html, body {
   font-size: 0.9em;
 }
 
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+}
+.btn-black:hover {
+  background-color: #fff;
+  border: 1px solid #191919;
+  color: #191919;
+}
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+
 .btn-transparent {
   background-color: transparent;
   border: 1px solid #191919;
@@ -46,11 +65,41 @@ html, body {
   font-size: 0.9em;
 }
 
+.section-title {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
+.section-title p {
+  color: #F94D1C;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 10px;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
 .wrapper-grid {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -243,8 +292,63 @@ main .brands-workwith {
   margin-top: 75px;
   margin-bottom: 30px;
 }
+main .brands-workwith img {
+  width: 100%;
+}
 @media (min-width: 992px) {
   main .brands-workwith {
     display: grid;
   }
+}
+main .project-and-case .container .section-title {
+  text-align: center;
+}
+main .project-and-case .container .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 720px) {
+  main .project-and-case .container .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+main .project-and-case .container .project-and-cases .project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
+}
+main .project-and-case .container .project-and-cases .project img {
+  width: 100%;
+  height: auto;
+}
+main .project-and-case .container .project-and-cases .project h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(25, 25, 25, 0.1019607843);
+}
+main .project-and-case .container .project-and-cases .project .readmore {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+main .project-and-case .container .project-and-cases .project .readmore i {
+  margin-left: 3px;
+}
+main .project-and-case .container .project-and-cases .project:hover .readmore {
+  text-decoration: underline;
+}
+main .project-and-case .container .center-content {
+  margin-top: 50px;
+  margin-bottom: 90px;
 }
