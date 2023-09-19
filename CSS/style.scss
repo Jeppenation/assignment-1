@@ -304,5 +304,59 @@ main{
             }
     
         }
+        
+        
     }
+
+    .brands-workwith{
+        //display grid creates the crid
+        display: none;
+        
+         //grid template colums creates the colums. repeat autofit fills the screen automaticly. 
+         grid-template-columns: repeat(auto-fit, minmax(25px, 200px));
+    
+         //column-gap creates a gap between the columns
+         column-gap: 73px;
+         margin-top: 75px;
+ 
+         //to create som distanse from the next part
+         margin-bottom: 30px;
+        
+
+
+
+        @media (min-width:992px) {
+            display: grid;
+
+           
+            
+        }
+       
+    }
+
+    // .features{
+    //     padding-top: 80px;
+    //     padding-bottom: 80px;
+    //     margin-bottom: 80px;
+    //     display: grid;
+
+    //     gap: 50px;
+
+    //     align-items: center;
+    //     justify-content: center;
+
+    //     grid-template-columns: repeat(auto-fit, minmax(30px, 300px));
+    //     grid-template-areas: 
+    //     "accounting ba sb"
+    //     "accounting fa rm";
+
+        
+
+    //     .out-accounting{grid-area: accounting;}
+    //     .business-advice{grid-area: ba;}
+    //     .financial-advice{grid-area: fa;}
+    //     .startup-business{grid-area: sb;}
+    //     .risk-management{grid-area: rm;}
+    // } kommenterar bort denna funktion då jag inte fått det att fungera än
+
 }
