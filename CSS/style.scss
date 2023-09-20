@@ -1,467 +1,468 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap");
 
-html, body{
-    color: #191919;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+html,
+body {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.btn-theme{
-    background-color: #F9D783;
-    border:1px solid #F9D783;
-    color: #191919;
-    text-decoration: none;
+.btn-theme {
+  background-color: #f9d783;
+  border: 1px solid #f9d783;
+  color: #191919;
+  text-decoration: none;
 
-    // creates more room for the text, and a larger button
-    padding: 12px 30px;
+  // creates more room for the text, and a larger button
+  padding: 12px 30px;
 
-    // 600 in font-weight is semi-bold
-    font-weight: 600;
+  // 600 in font-weight is semi-bold
+  font-weight: 600;
 
-    // border-radius creates a more rounder form of a button
-    border-radius: 25px;
+  // border-radius creates a more rounder form of a button
+  border-radius: 25px;
 
-    // settings for when we hover over the button
-    &:hover{
-        background-color: #191919;
-        border: 1px solid #191919;
-        color: #f0efe9;
-    }
-
-    // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px. 
-    i{
-        margin-left: 8px;
-        font-size: 0.9em;
-    }
-}
-
-.btn-black{
+  // settings for when we hover over the button
+  &:hover {
     background-color: #191919;
-    border:1px solid #191919;
-    color: #fff;
-    text-decoration: none;
+    border: 1px solid #191919;
+    color: #f0efe9;
+  }
 
-    // creates more room for the text, and a larger button
-    padding: 12px 30px;
-
-    // 600 in font-weight is semi-bold
-    font-weight: 600;
-
-    // border-radius creates a more rounder form of a button
-    border-radius: 25px;
-
-    // settings for when we hover over the button
-    &:hover{
-        background-color: #fff;
-        border: 1px solid #191919;
-        color: #191919;
-    }
-
-    // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px. 
-    i{
-        margin-left: 8px;
-        font-size: 0.9em;
-    }
+  // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px.
+  i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
 }
 
-.btn-transparent{
-    background-color: transparent;
-    border:1px solid #191919;
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #fff;
+  text-decoration: none;
+
+  // creates more room for the text, and a larger button
+  padding: 12px 30px;
+
+  // 600 in font-weight is semi-bold
+  font-weight: 600;
+
+  // border-radius creates a more rounder form of a button
+  border-radius: 25px;
+
+  // settings for when we hover over the button
+  &:hover {
+    background-color: #fff;
+    border: 1px solid #191919;
     color: #191919;
-    text-decoration: none;
-    padding: 12px 30px;
-    font-weight: 600;
-    border-radius: 25px;
+  }
 
-    &:hover{
-        background-color: #191919;
-        border: 1px solid #191919;
-        color: #f0efe9;
-    }
-
-    i{
-        margin-left: 8px;
-        font-size: 0.9em;
-    }
+  // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px.
+  i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
 }
 
-.section-title{
-    padding-top: 70px;
-    padding-bottom: 30px;
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 25px;
 
+  &:hover {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #f0efe9;
+  }
 
-    @media (min-width: 768px) {
-        padding-top: 120px;
-        padding-bottom: 90px;
-        
-    }
-
-    p{
-        color: #F94D1C;
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-
-        margin: 10px;
-    }
-
-    h2{
-        color:#191919;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 45px;
-    }
+  i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
 }
 
+.section-title {
+  padding-top: 70px;
+  padding-bottom: 30px;
 
-.wrapper-grid{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+  @media (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+
+  p {
+    color: #f94d1c;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    margin: 10px;
+  }
+
+  h2 {
+    color: #191919;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+  }
 }
 
-.center-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
-header{
-    background-color: #f0efe9;
-    padding: 16px;
-    align-items: center;
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .container{
+header {
+  background-color: #f0efe9;
+  padding: 16px;
+  align-items: center;
+
+  .container {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-areas: "logotype bars";
     align-items: center;
-   
-
 
     @media (min-width: 992px) {
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: 
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas:
         "logotype cib social"
         "logotype menu menu";
-        
     }
 
-    .btn-menubars{
-        grid-area: bars;
-        border: none;
-        font-size: 25px;
-        background-color: transparent;
-        @media (min-width:992px) {
-            display: none;            
-        }
-    }
-    .logotype{
-        grid-area: logotype;
-        margin-right: 70px;
-    }
-    .contact-information-bar{
-        grid-area: cib;
+    .btn-menubars {
+      grid-area: bars;
+      border: none;
+      font-size: 25px;
+      background-color: transparent;
+      @media (min-width: 992px) {
         display: none;
-
-        justify-content: flex-start;
-        align-content: center;
-
-        @media (min-width:992px) {
-            display: flex;    
-        }
-
-        .content-box{
-            padding-right: 20px;
-            margin-right: 30px;
-            border-right: 1px solid #666666;
-
-            font-family: 'Inter', sans-serif;
-
-            // 300 font-weight is 'light'
-            font-weight: 300;
-            font-size: 15px;
-
-
-            // the settings for i-tag, concerning icons.
-            i{
-                // Moves the text sligtly to the right. 
-                margin-right: 5px;
-
-                // em is depended on the font of the parent (content-box). Since we wanted the icons
-                //larger, we went with 1.2em
-                font-size: 1.2em;;
-                color: #666666;
-            }
-         
-            // Only affects the last one, the adress, since we dont want the border on it's right side
-            &.last{
-            border: none;
-        }
-
-        }
+      }
     }
-    .socialmedia{
-        grid-area: social;
-        display: none;
-        
-        @media (min-width:992px) {
-            display: block;            
-        }
-
-        
-            a{
-                color:#191919;
-                font-size: 1.2rem;
-                margin-left: 10px;
-
-                &:hover{
-                    color: #b9b6b6;
-                }
-            }
-        
+    .logotype {
+      grid-area: logotype;
+      margin-right: 70px;
     }
-    .menu{
-        display: none;
-        grid-area: menu;
-        justify-content: space-between;
-        align-items: center;
-        border-top: 1px solid #dad9d3;
-        margin-top: 10px;
-        padding-top: 10px;
+    .contact-information-bar {
+      grid-area: cib;
+      display: none;
 
-        @media (min-width:992px) {
-            display: flex;   
+      justify-content: flex-start;
+      align-content: center;
+
+      @media (min-width: 992px) {
+        display: flex;
+      }
+
+      .content-box {
+        padding-right: 20px;
+        margin-right: 30px;
+        border-right: 1px solid #666666;
+
+        font-family: "Inter", sans-serif;
+
+        // 300 font-weight is 'light'
+        font-weight: 300;
+        font-size: 15px;
+
+        // the settings for i-tag, concerning icons.
+        i {
+          // Moves the text sligtly to the right.
+          margin-right: 5px;
+
+          // em is depended on the font of the parent (content-box). Since we wanted the icons
+          //larger, we went with 1.2em
+          font-size: 1.2em;
+          color: #666666;
         }
 
-        nav{
-            
-            // a == links. here we controll how they act and look
-            a{
-                display: inline-block;
-                color:#191919;
-                text-decoration: none;
-                margin-right: 30px;
-
-                // this part we have not gone through yet. 
-                position: relative;
-
-                // what happens when the link is active
-                &.active{
-                    font-weight: 500;
-                }
-
-                // regulates what happens after it's been activate, and when we hover the link
-                // content, position and transform, we havent gone through yet.
-                &.active::after, 
-                &:hover::after{
-                    content: "";
-                    font-weight: 500;
-                    position: absolute;
-
-                    height: 2px;
-                    width: 15px;
-
-                    background-color: #191919;
-                    left:50%;
-                    bottom: -3px;
-
-                    transform: translate((calc(50% - 15px)));
-                }
-
-              
+        // Only affects the last one, the adress, since we dont want the border on it's right side
+        &.last {
+          border: none;
         }
-
-        .btn-login{
-            padding-top: 12px;
-            padding-bottom: 12px;
-        }
+      }
     }
+    .socialmedia {
+      grid-area: social;
+      display: none;
 
-        
+      @media (min-width: 992px) {
+        display: block;
+      }
+
+      a {
+        color: #191919;
+        font-size: 1.2rem;
+        margin-left: 10px;
+
+        &:hover {
+          color: #b9b6b6;
+        }
+      }
+    }
+    .menu {
+      display: none;
+      grid-area: menu;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #dad9d3;
+      margin-top: 10px;
+      padding-top: 10px;
+
+      @media (min-width: 992px) {
+        display: flex;
+      }
+
+      nav {
+        // a == links. here we controll how they act and look
+        a {
+          display: inline-block;
+          color: #191919;
+          text-decoration: none;
+          margin-right: 30px;
+
+          // this part we have not gone through yet.
+          position: relative;
+
+          // what happens when the link is active
+          &.active {
+            font-weight: 500;
+          }
+
+          // regulates what happens after it's been activate, and when we hover the link
+          // content, position and transform, we havent gone through yet.
+          &.active::after,
+          &:hover::after {
+            content: "";
+            font-weight: 500;
+            position: absolute;
+
+            height: 2px;
+            width: 15px;
+
+            background-color: #191919;
+            left: 50%;
+            bottom: -3px;
+
+            transform: translate((calc(50% - 15px)));
+          }
+        }
+
+        .btn-login {
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+      }
     }
   }
 }
-main{
-    .showcase{
+main {
+  .showcase {
+    background-color: #f0efe9;
 
-        background-color: #f0efe9;
-    
-        // since we have content, and img under content, this acts as a parent class for them.
-        .container{
-            // we wanted the content to the left, and the img to the right. So we made it a flexbox
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-            // governs the content, or the text 
-            .content{
-    
-                padding-top: 40px;
-                padding-bottom: 40px;
-                text-align: center;
-                
-                @media (min-width:1200px) {
-                    text-align: left;
-                }
-                // the "title", we choose h1 since it's the largest one and considerd to be 
-                // the main title. although we changed how it looked here. 
-                // this is manily a practical use for us. 
-                h1{
-                    font-family: 'DM Sans', sans-serif;
-                    font-weight: 700;
-                    font-size: 40px;
-    
-                    @media (min-width:768px) {
-                        font-size: 70px;
-                    }
-    
-    
-                    @media (min-width:1400px) {
-                        font-size: 86px;
-                    }
-                }
-    
-                // changes the style of the paragraph in this content
-                // we choose p, since it's maninly used as a paragraph. 
-                // although we changed the looks with this code.
-                p{
-                    font-size: 16px;
-                    padding-top: 40px;
-                    padding-bottom: 35px;
-                    padding-left: 10px;
-                    padding-right: 10px;
-    
-                    @media (min-width:768px) {
-                        font-size: 20px;
-                        padding-left: 0;
-                        padding-right: 0;
-                    }
-                }
-    
-                // since we have two buttons,  we added an a tag here as well. 
-                a{
-                    // created some space between the two buttons
-                    margin-right: 0px;
-                    display: block;
-                    margin-bottom: 20px;
-                    
-                    @media (min-width:768px) {
-                        display: inline-block;
-                    }
-                }
-    
-            }
-    
-            img{
-                display: none;
-                margin-right: -50px;
-    
-                @media (min-width:1200px) {
-                    display: block;
-                }
-            }
-    
+    // since we have content, and img under content, this acts as a parent class for them.
+    .container {
+      // we wanted the content to the left, and the img to the right. So we made it a flexbox
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      // governs the content, or the text
+      .content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+
+        @media (min-width: 1200px) {
+          text-align: left;
         }
-        
-        
-    }
+        // the "title", we choose h1 since it's the largest one and considerd to be
+        // the main title. although we changed how it looked here.
+        // this is manily a practical use for us.
+        h1 {
+          font-family: "DM Sans", sans-serif;
+          font-weight: 700;
+          font-size: 40px;
 
-    .brands-workwith{
-        //display grid creates the crid
+          @media (min-width: 768px) {
+            font-size: 70px;
+          }
+
+          @media (min-width: 1400px) {
+            font-size: 86px;
+          }
+        }
+
+        // changes the style of the paragraph in this content
+        // we choose p, since it's maninly used as a paragraph.
+        // although we changed the looks with this code.
+        p {
+          font-size: 16px;
+          padding-top: 40px;
+          padding-bottom: 35px;
+          padding-left: 10px;
+          padding-right: 10px;
+
+          @media (min-width: 768px) {
+            font-size: 20px;
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+
+        // since we have two buttons,  we added an a tag here as well.
+        a {
+          // created some space between the two buttons
+          margin-right: 0px;
+          display: block;
+          margin-bottom: 20px;
+
+          @media (min-width: 768px) {
+            display: inline-block;
+          }
+        }
+      }
+
+      img {
         display: none;
-        
-         //grid template colums creates the colums. repeat autofit fills the screen automaticly. 
-         grid-template-columns: repeat(auto-fit, minmax(25px, 200px));
-    
-         //column-gap creates a gap between the columns
-         column-gap: 73px;
-         margin-top: 75px;
- 
-         //to create som distanse from the next part
-         margin-bottom: 30px;
-        
-         img{
+        margin-right: -50px;
+
+        @media (min-width: 1200px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  // parentobject for project and cas
+  .project-and-case {
+    .container {
+      // section-title controlls and sets <p> to red and h2 to bold, amongst otherthings
+      // Since it's not center on everything, we changed it to be alligned center here
+      .section-title {
+        text-align: center;
+      }
+
+      //
+      .project-and-cases {
+        display: grid;
+
+        //at a certain point, 720px in this case, we change the columns to 1 column
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        //since we wanted to make two columns, we used grid-template-columns: 1fr 1fr here
+        @media (min-width: 720px) {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        //This grid controlls the text on each of the article.
+        .project {
+          display: grid;
+
+          //since we want the text to be one 1-2 rows, we specified it to be 1fr column
+          grid-template-columns: 1fr;
+
+          //we added this part so that the line beneath the articles are even.
+          grid-template-rows: auto 1fr auto;
+          color: #191919;
+          text-decoration: none;
+
+          //this alows the picture to change size, depending on the view-port
+          img {
             width: 100%;
-         }
+            height: auto;
+          }
 
+          //we change font, font-weight and pixelsize
+          h3 {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            padding-top: 35px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #1919191a;
+          }
 
+          //readmore is the Read More button beneath the articles
+          .readmore {
+            padding: 15px;
+            display: block;
+            text-align: right;
+            color: #191919;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: none;
 
-        @media (min-width:992px) {
-            display: grid;
-
-           
-            
-        }
-       
-    }
-
-    .project-and-case{
-        .container{
-
-            .section-title{
-                text-align: center;
+            //the icon for the arrow to the side of "read more". we wanted it further right, so we added margin-left
+            i {
+              margin-left: 3px;
             }
+          }
 
-            .project-and-cases{
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 30px;
-
-                @media (min-width: 720px) {
-                    grid-template-columns: 1fr 1fr;
-                }
-
-                .project{
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: auto 1fr auto;
-                    color: #191919;
-                    text-decoration: none;
-
-                    img{
-                        width: 100%;
-                        height: auto;
-                    }
-
-                    h3{
-                        font-family: 'DM Sans', sans-serif;
-                        font-weight: 700;
-                        font-size: 22px;
-                        padding-top: 35px;
-                        padding-bottom: 16px;
-                        border-bottom: 1px solid #1919191a;
-                    }
-
-                    .readmore{
-                        padding: 15px;
-                        display: block;
-                        text-align: right;
-                        color: #191919;
-                        font-family: 'Inter', sans-serif;
-                        font-weight: 500;
-                        font-size: 14px;
-                        text-decoration: none;
-
-                        i{
-                            margin-left: 3px;
-                        }
-
-                    }
-
-                    &:hover .readmore{
-                        text-decoration: underline;
-                    }
-                }
-            }
-        .center-content{
-            margin-top: 50px;
-            margin-bottom: 90px;
+          //When you hover over the picture, or read more button, you'll get an underline
+          &:hover .readmore {
+            text-decoration: underline;
+          }
         }
-        }
+      }
+      //centers the content. used in this case for the title and sub-title
+      .center-content {
+        margin-top: 50px;
+        margin-bottom: 90px;
+      }
     }
+  }
+
+  //brands is the parent of the sub-classes
+  .brands {
+    //container adds some padding to the left and to the right.
+    .container {
+      // since it's just pictures on a line, we went with Flex
+      display: flex;
+      justify-content: center;
+
+      //controlls how the flex will behave when it runs out of space on the horizontal plane
+      flex-wrap: wrap;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      @media (min-width: 768px) {
+        //here we went with space-around, since it looked best that way
+        justify-content: space-around;
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      .logo {
+        padding: 10px;
+
+        img {
+          //made the image responsive and added some margin to the bottom and to the left, so that they will get some breathing room
+          //on a smaller screen.
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 15px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
 }
