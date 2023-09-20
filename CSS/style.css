@@ -360,3 +360,26 @@ main .brands .container .logo img {
   margin-bottom: 15px;
   margin-left: 15px;
 }
+main .features-parent .container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #191919;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+main .features-parent .container .features-flex {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+main .features-parent .container .features-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 130px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+main .features-parent .container .features-grid a {
+  text-decoration: none;
+  color: #191919;
+}

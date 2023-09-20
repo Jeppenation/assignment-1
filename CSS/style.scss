@@ -465,4 +465,35 @@ main {
       }
     }
   }
+
+  .features-parent{
+    .container{
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #191919;
+      padding-left: 100px;
+      padding-right: 100px;
+
+      .features-flex{
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        
+
+      }
+      .features-grid{
+        display: grid;
+        grid-template-columns: 2fr 2fr; 
+        gap: 130px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        a{
+          text-decoration: none;
+          color: #191919;
+        }
+
+      }
+    }
+  }
 }
