@@ -364,22 +364,43 @@ main .features-parent .container {
   display: flex;
   justify-content: space-between;
   border: 1px solid #191919;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 100px;
 }
 main .features-parent .container .features-flex {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  margin-right: 100px;
+}
+main .features-parent .container .features-flex .section-title {
+  margin: 0;
+  padding: 0;
+}
+main .features-parent .container .features-flex .btn-theme {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
 }
 main .features-parent .container .features-grid {
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 130px;
+  grid-template-columns: 1fr 1fr;
+  flex: 1;
+  gap: 80px;
   margin-top: 20px;
   margin-bottom: 30px;
+  margin-left: 130px;
 }
 main .features-parent .container .features-grid a {
   text-decoration: none;
   color: #191919;
+}
+main .features-parent .container .features-grid a i {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+main .features-parent .container .features-grid a h3 {
+  font-size: 22px;
+  text-align: left;
+}
+main .features-parent .container .features-grid a p {
+  grid-row: span 2;
 }
