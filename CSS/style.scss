@@ -487,9 +487,11 @@ main {
         flex-direction: column;
 
         margin-right: 0;
+        text-align: center;
 
         @media (min-width: 1140px) {
           margin-right: 100px;
+          
         }
 
         .section-title {
