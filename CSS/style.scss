@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap");
 
+
+
 html,
 body {
   color: #191919;
@@ -87,6 +89,13 @@ body {
     margin-left: 8px;
     font-size: 0.9em;
   }
+}
+
+.btn-play{
+  color: #191919;
+  padding: 20px 20px;
+  border: 1px solid #191919;
+  border-radius: 50%;
 }
 
 .section-title {
@@ -548,18 +557,25 @@ main {
   .about-company{
 
     .container{
-      border: 1px solid black;
+      // border: 1px solid black;
+      margin-top: 120px;
       display: flex;
       justify-content: space-between;
       align-items: start;
+      flex-wrap: wrap;
 
       .img-box{
-
-        margin-left: 150px;
+        // flex: 1;
+        height: 450px;
         
+        @media (min-width:430px) {
+          height: 100%;
+          
+        }
 
         img{
-         margin-right: 200px;
+          width: 100%;
+          height: auto;
         }
 
         .overlay-box{
@@ -575,8 +591,12 @@ main {
           position: relative;
 
           bottom: 215px;
-          right: 60px;
           
+          
+          @media (min-width: 720px) {
+            
+            right: 60px;    
+          }
 
           .name{
             color: #191919;
@@ -592,29 +612,49 @@ main {
           }
           p{
             margin-top: 25px;
+            font-style: italic;
           }
         }
       }
 
       .about-company-text{
-        display: block;
-        border: 1px solid black;
-        margin-bottom: 100px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        
+
+        @media (min-width: 1100px) {
+          margin-left: 50px;
+        }
+
+        @media (min-width:1200px) {
+         margin-left: 250px; 
+        }
+        
           .section-title{
             padding-top: 0px;
-            padding-bottom: 45px;
+            padding-bottom: 0px;
             p{
               font-size: 18px;
-            }
+            }     
+         }
+
+         p{
+          margin-top: 30px;
+          line-height: 2;
+         }
+        
+         .ac-buttons{
+          display: inline-block;
+          margin-top: 75px;
+
+          .btn-play{
+            margin-left: 40px;
+            padding: 10px 14px;
           }
-
-        .btn-black {
-          margin-top: 100px;
-        }
-      }
-
+         }
       }
 
     }
   }
-
+}

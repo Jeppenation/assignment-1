@@ -66,6 +66,13 @@ body {
   font-size: 0.9em;
 }
 
+.btn-play {
+  color: #191919;
+  padding: 20px 20px;
+  border: 1px solid #191919;
+  border-radius: 50%;
+}
+
 .section-title {
   padding-top: 70px;
   padding-bottom: 30px;
@@ -428,16 +435,23 @@ main .features-parent .container .features-grid a p {
   grid-row: span 2;
 }
 main .about-company .container {
-  border: 1px solid black;
+  margin-top: 120px;
   display: flex;
   justify-content: space-between;
   align-items: start;
+  flex-wrap: wrap;
 }
 main .about-company .container .img-box {
-  margin-left: 150px;
+  height: 450px;
+}
+@media (min-width: 430px) {
+  main .about-company .container .img-box {
+    height: 100%;
+  }
 }
 main .about-company .container .img-box img {
-  margin-right: 200px;
+  width: 100%;
+  height: auto;
 }
 main .about-company .container .img-box .overlay-box {
   height: 180px;
@@ -449,7 +463,11 @@ main .about-company .container .img-box .overlay-box {
   padding-bottom: 60px;
   position: relative;
   bottom: 215px;
-  right: 60px;
+}
+@media (min-width: 720px) {
+  main .about-company .container .img-box .overlay-box {
+    right: 60px;
+  }
 }
 main .about-company .container .img-box .overlay-box .name {
   color: #191919;
@@ -465,19 +483,39 @@ main .about-company .container .img-box .overlay-box .position {
 }
 main .about-company .container .img-box .overlay-box p {
   margin-top: 25px;
+  font-style: italic;
 }
 main .about-company .container .about-company-text {
-  display: block;
-  border: 1px solid black;
-  margin-bottom: 100px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1100px) {
+  main .about-company .container .about-company-text {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  main .about-company .container .about-company-text {
+    margin-left: 250px;
+  }
 }
 main .about-company .container .about-company-text .section-title {
   padding-top: 0px;
-  padding-bottom: 45px;
+  padding-bottom: 0px;
 }
 main .about-company .container .about-company-text .section-title p {
   font-size: 18px;
 }
-main .about-company .container .about-company-text .btn-black {
-  margin-top: 100px;
+main .about-company .container .about-company-text p {
+  margin-top: 30px;
+  line-height: 2;
+}
+main .about-company .container .about-company-text .ac-buttons {
+  display: inline-block;
+  margin-top: 75px;
+}
+main .about-company .container .about-company-text .ac-buttons .btn-play {
+  margin-left: 40px;
+  padding: 10px 14px;
 }
