@@ -427,3 +427,57 @@ main .features-parent .container .features-grid a h3 {
 main .features-parent .container .features-grid a p {
   grid-row: span 2;
 }
+main .about-company .container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+main .about-company .container .img-box {
+  margin-left: 150px;
+}
+main .about-company .container .img-box img {
+  margin-right: 200px;
+}
+main .about-company .container .img-box .overlay-box {
+  height: 180px;
+  width: 370px;
+  background-color: #beebff;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 35px;
+  padding-bottom: 60px;
+  position: relative;
+  bottom: 215px;
+  right: 60px;
+}
+main .about-company .container .img-box .overlay-box .name {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+main .about-company .container .img-box .overlay-box .position {
+  color: #f94d1c;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+main .about-company .container .img-box .overlay-box p {
+  margin-top: 25px;
+}
+main .about-company .container .about-company-text {
+  display: block;
+  border: 1px solid black;
+  margin-bottom: 100px;
+}
+main .about-company .container .about-company-text .section-title {
+  padding-top: 0px;
+  padding-bottom: 45px;
+}
+main .about-company .container .about-company-text .section-title p {
+  font-size: 18px;
+}
+main .about-company .container .about-company-text .btn-black {
+  margin-top: 100px;
+}

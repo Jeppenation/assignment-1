@@ -544,4 +544,77 @@ main {
       }
     }
   }
-}
+
+  .about-company{
+
+    .container{
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+
+      .img-box{
+
+        margin-left: 150px;
+        
+
+        img{
+         margin-right: 200px;
+        }
+
+        .overlay-box{
+          height: 180px;
+          width: 370px;
+          background-color: #beebff;
+
+          padding-left: 25px;
+          padding-right: 25px;
+          padding-top: 35px;
+          padding-bottom: 60px;
+
+          position: relative;
+
+          bottom: 215px;
+          right: 60px;
+          
+
+          .name{
+            color: #191919;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+          }
+          .position{
+            color: #f94d1c;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+          }
+          p{
+            margin-top: 25px;
+          }
+        }
+      }
+
+      .about-company-text{
+        display: block;
+        border: 1px solid black;
+        margin-bottom: 100px;
+          .section-title{
+            padding-top: 0px;
+            padding-bottom: 45px;
+            p{
+              font-size: 18px;
+            }
+          }
+
+        .btn-black {
+          margin-top: 100px;
+        }
+      }
+
+      }
+
+    }
+  }
+
