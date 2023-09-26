@@ -526,7 +526,27 @@ main .about-company .container .about-company-text .ac-buttons .btn-play {
 .our-services .container {
   padding: 0;
   background-color: #f0efe9;
-  padding-bottom: 220px;
+  padding-bottom: 60px;
+}
+.our-services .container .center-content .browse-btn {
+  color: #191919;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #191919;
+  border-radius: 60px;
+  padding: 20px 50px 20px;
+  background-color: #f0efe9;
+  margin-top: 50px;
+  transition: background-color 0.1s ease;
+  transition: color 0.1s ease;
+  font-weight: 600;
+}
+.our-services .container .center-content .browse-btn i {
+  margin-left: 15px;
+}
+.our-services .container .center-content .browse-btn:hover {
+  background-color: #191919;
+  color: #f0efe9;
 }
 .our-services .container .section-title {
   text-align: center;
@@ -541,11 +561,18 @@ main .about-company .container .about-company-text .ac-buttons .btn-play {
   }
 }
 .our-services .container .os-boxes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+@media (min-width: 720px) {
+  .our-services .container .os-boxes {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 .our-services .container .os-boxes .os-box {
   border: 1px solid black;
