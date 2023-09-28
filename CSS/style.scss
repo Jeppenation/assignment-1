@@ -983,6 +983,41 @@ main {
     }
   }
 
+  .team{
+    background-color: #f9d783;
+    .container{
+
+      .section-title{
+        position: relative;
+        
+        h2{
+          padding-bottom: 50px;
+
+          @media(min-width: 992px) {
+            padding-bottom: 0;
+          }
+        }
+
+        .btn-transparent{
+          
+        
+
+          @media (min-width:1200px) {
+            right: 200px;
+          }
+
+          @media (min-width: 992px) {
+            position: absolute;
+            right:100px;
+            bottom: 100px;
+            
+          }
+          
+        }
+      }
+    }
+  }
+
 }
 
 

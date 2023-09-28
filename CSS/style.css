@@ -750,3 +750,29 @@ main .why-choose-us .container .wcu-left .section-title h2 {
     padding-bottom: 90px;
   }
 }
+main .team {
+  background-color: #f9d783;
+}
+main .team .container .section-title {
+  position: relative;
+}
+main .team .container .section-title h2 {
+  padding-bottom: 50px;
+}
+@media (min-width: 992px) {
+  main .team .container .section-title h2 {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  main .team .container .section-title .btn-transparent {
+    right: 200px;
+  }
+}
+@media (min-width: 992px) {
+  main .team .container .section-title .btn-transparent {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+  }
+}
