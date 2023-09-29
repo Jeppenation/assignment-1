@@ -9,6 +9,10 @@ body {
   line-height: 1.5;
 }
 
+.review-stars {
+  color: #F94D1C;
+}
+
 .btn-theme {
   background-color: #f9d783;
   border: 1px solid #f9d783;
@@ -542,6 +546,12 @@ main .about-company .container .about-company-text .ac-buttons {
 main .about-company .container .about-company-text .ac-buttons .btn-play {
   margin-left: 40px;
   padding: 10px 14px;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+}
+main .about-company .container .about-company-text .ac-buttons .btn-play:hover {
+  background-color: #191919;
+  color: #fff;
 }
 main .our-services {
   background-color: #f0efe9;
@@ -753,16 +763,35 @@ main .why-choose-us .container .wcu-left .section-title h2 {
 main .team {
   background-color: #f9d783;
 }
+main .team .container {
+  padding-bottom: 50px;
+}
 main .team .container .section-title {
   position: relative;
+  padding-top: 40px;
+}
+@media (min-width: 991px) {
+  main .team .container .section-title {
+    padding-top: 70px;
+  }
 }
 main .team .container .section-title h2 {
   padding-bottom: 50px;
+  font-size: 30px;
 }
 @media (min-width: 992px) {
   main .team .container .section-title h2 {
     padding-bottom: 0;
+    font-size: 45px;
   }
+}
+main .team .container .section-title .btn-transparent {
+  transition: background 0.2s ease;
+  transition: color 0.2s ease;
+}
+main .team .container .section-title .btn-transparent:hover {
+  background-color: #fff;
+  color: #191919;
 }
 @media (min-width: 1200px) {
   main .team .container .section-title .btn-transparent {
@@ -775,4 +804,107 @@ main .team .container .section-title h2 {
     right: 100px;
     bottom: 100px;
   }
+}
+main .team .container .team-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media (min-width: 510px) {
+  main .team .container .team-images {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+main .team .container .team-images .team-person {
+  display: block;
+}
+main .team .container .team-images .team-person h3 {
+  padding-top: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+@media (min-width: 510px) {
+  main .team .container .team-images .team-person h3 {
+    padding-top: 40px;
+  }
+}
+main .team .container .team-images .team-person img {
+  width: 100%;
+  height: auto;
+  padding-right: 20px;
+}
+@media (min-width: 380px) {
+  main .team .container .team-images .team-person img {
+    padding-right: 0px;
+  }
+}
+main .team .container .team-images .team-person p {
+  border-bottom: 1px solid #191919;
+  font-size: 14px;
+}
+@media (min-width: 510px) {
+  main .team .container .team-images .team-person p {
+    border-bottom: none;
+    font-size: 16px;
+  }
+}
+main .team .container .pagi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .team .container .pagi .pagi-item .pagi-dot {
+  background-color: #666666;
+  height: 10px;
+  width: 10px;
+  margin: 10px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+main .team .container .pagi .pagi-item .pagi-dot:hover {
+  background-color: #191919;
+}
+main .team .container .what-our-client-say {
+  background-color: #fff;
+}
+main .team .container .what-our-client-say .section-title {
+  text-align: center;
+}
+main .team .container .what-our-client-say .btn-black {
+  margin-bottom: 120px;
+  margin-top: 20px;
+}
+main .team .container .what-our-client-say .testimonials {
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+main .team .container .what-our-client-say .testimonials .testimonial p {
+  font-size: 18px;
+}
+main .team .container .what-our-client-say .testimonials .testimonial h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+main .team .container .what-our-client-say .testimonials .testimonial .position-company {
+  color: #F94D1C;
+}
+main .team .container .what-our-client-say .testimonials .testimonial .review-stars {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main .team .container .what-our-client-say .testimonials .testimonial .testimonial-footer {
+  display: flex;
+  gap: 20px;
+}
+main .team .container .what-our-client-say .testimonials .testimonial .testimonial-footer h3 {
+  margin: 0px;
+  font-size: 22px;
 }
