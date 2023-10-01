@@ -13,6 +13,24 @@ body {
   color: #F94D1C;
 }
 
+.pagi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagi .pagi-item .pagi-dot {
+  background-color: #666666;
+  height: 10px;
+  width: 10px;
+  margin: 10px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+.pagi .pagi-item .pagi-dot:hover {
+  background-color: #191919;
+}
+
 .btn-theme {
   background-color: #f9d783;
   border: 1px solid #f9d783;
@@ -764,7 +782,8 @@ main .team {
   background-color: #f9d783;
 }
 main .team .container {
-  padding-bottom: 50px;
+  padding-bottom: 120px;
+  padding-left: 10px;
 }
 main .team .container .section-title {
   position: relative;
@@ -849,28 +868,17 @@ main .team .container .team-images .team-person p {
     font-size: 16px;
   }
 }
-main .team .container .pagi {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .team .container .pagi .pagi-item .pagi-dot {
-  background-color: #666666;
-  height: 10px;
-  width: 10px;
-  margin: 10px;
-  border: 1px solid #666666;
-  border-radius: 50%;
-  margin-bottom: 50px;
-}
-main .team .container .pagi .pagi-item .pagi-dot:hover {
-  background-color: #191919;
-}
 main .team .container .what-our-client-say {
   background-color: #fff;
 }
 main .team .container .what-our-client-say .section-title {
   text-align: center;
+  padding-bottom: 0px;
+}
+@media (min-width: 960px) {
+  main .team .container .what-our-client-say .section-title {
+    padding-bottom: 30px;
+  }
 }
 main .team .container .what-our-client-say .btn-black {
   margin-bottom: 120px;
@@ -880,9 +888,16 @@ main .team .container .what-our-client-say .testimonials {
   padding-right: 50px;
   padding-left: 50px;
   padding-bottom: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (min-width: 992px) {
+  main .team .container .what-our-client-say .testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
 }
 main .team .container .what-our-client-say .testimonials .testimonial p {
   font-size: 18px;
@@ -907,4 +922,52 @@ main .team .container .what-our-client-say .testimonials .testimonial .testimoni
 main .team .container .what-our-client-say .testimonials .testimonial .testimonial-footer h3 {
   margin: 0px;
   font-size: 22px;
+}
+main .article-news .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .article-news .container .section-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+main .article-news .container .section-title h2 {
+  font-size: 35px;
+}
+main .article-news .container .section-title .btn-transparent {
+  position: absolute;
+  left: 25%;
+}
+main .article-news .container .news {
+  position: relative;
+}
+main .article-news .container .news .news-title {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #6A6C71;
+}
+main .article-news .container .news img {
+  width: 100%;
+  height: auto;
+}
+main .article-news .container .news h3 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+main .article-news .container .news p {
+  color: rgba(25, 25, 25, 0.6901960784);
+}
+main .article-news .container .news .date-box {
+  position: absolute;
+  background-color: #f9d783;
+  width: 65px;
+  line-height: 0;
+  padding: 10px;
+  text-align: center;
+  left: 10px;
+  top: 10px;
 }
