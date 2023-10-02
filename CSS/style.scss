@@ -1207,57 +1207,85 @@ main {
 
 
 
+
       .section-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
         text-align: center;
-        position: relative;
+        
         margin-bottom: 20px;
 
         h2{
           font-size: 35px;
         }
 
-        .btn-transparent{
-          position: absolute;
-          left: 25%;
+
+        @media (min-width: 1170px) {
+          justify-content: start;
+          align-items: start;
+          position: relative;
+
+          
+
+          .btn-transparent{
+            position: absolute;
+            
+            right: 20px;
+            bottom: 100px;
+          }
         }
+
       }
 
-      .news{
-        position: relative;
-        .news-title{
-          margin-top: 15px;
-          margin-bottom: 20px;
-          color: #6A6C71;
+      .news-articles{
+
+        @media (min-width: 1180px) {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 30px;
         }
 
-        img{
-          width: 100%;
-          height: auto;
+        .news{
+
+          position: relative;
+          .news-title{
+            margin-top: 15px;
+            margin-bottom: 20px;
+            color: #6A6C71;
+          }
+  
+          img{
+            width: 100%;
+            height: auto;
+          }
+  
+          h3{
+            color: #191919;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+          }
+  
+          p{
+            color: #191919b0;
+          }
+  
+          .date-box{
+            position: absolute;
+            background-color: #f9d783;
+            width: 65px;
+            line-height: 0;
+            padding: 10px;
+            text-align: center;
+  
+            left: 10px;
+            top: 10px;
+          }
+  
         }
-
-        h3{
-          color: #191919;
-          font-family: "DM Sans", sans-serif;
-          font-weight: 700;
-          font-size: 22px;
-        }
-
-        p{
-          color: #191919b0;
-        }
-
-        .date-box{
-          position: absolute;
-          background-color: #f9d783;
-          width: 65px;
-          line-height: 0;
-          padding: 10px;
-          text-align: center;
-
-          left: 10px;
-          top: 10px;
-        }
-
       }
     }
   }

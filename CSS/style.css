@@ -929,39 +929,57 @@ main .article-news .container {
   gap: 40px;
 }
 main .article-news .container .section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  position: relative;
   margin-bottom: 20px;
 }
 main .article-news .container .section-title h2 {
   font-size: 35px;
 }
-main .article-news .container .section-title .btn-transparent {
-  position: absolute;
-  left: 25%;
+@media (min-width: 1170px) {
+  main .article-news .container .section-title {
+    justify-content: start;
+    align-items: start;
+    position: relative;
+  }
+  main .article-news .container .section-title .btn-transparent {
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+  }
 }
-main .article-news .container .news {
+@media (min-width: 1180px) {
+  main .article-news .container .news-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+main .article-news .container .news-articles .news {
   position: relative;
 }
-main .article-news .container .news .news-title {
+main .article-news .container .news-articles .news .news-title {
   margin-top: 15px;
   margin-bottom: 20px;
   color: #6A6C71;
 }
-main .article-news .container .news img {
+main .article-news .container .news-articles .news img {
   width: 100%;
   height: auto;
 }
-main .article-news .container .news h3 {
+main .article-news .container .news-articles .news h3 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
 }
-main .article-news .container .news p {
+main .article-news .container .news-articles .news p {
   color: rgba(25, 25, 25, 0.6901960784);
 }
-main .article-news .container .news .date-box {
+main .article-news .container .news-articles .news .date-box {
   position: absolute;
   background-color: #f9d783;
   width: 65px;
