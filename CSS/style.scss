@@ -517,6 +517,8 @@ main {
     .container {
       display: flex;
       justify-content: space-between;
+      align-items: start;
+      
       border: 1px solid #66191919;
       padding: 20px;
 
@@ -529,12 +531,11 @@ main {
       .features-flex {
         display: flex;
         flex: 1;
-        // justify-content: center;
-        // align-items: center;
         flex-direction: column;
 
         margin-right: 0;
-        text-align: center;
+        // text-align: center;
+        
 
         @media (min-width: 1140px) {
           margin-right: 100px;
@@ -544,20 +545,28 @@ main {
         .section-title {
           margin: 0;
           padding: 0;
+          padding-right: 100px;
+  
+          text-align: start;
 
           h2{
             font-size: 35px;
           }
           @media (min-width: 720px) {
             font-size: 45px;
+            padding: 0px;
           }
         }
+;
 
-        .btn-theme {
-          width: 100%;
-          text-align: center;
-          margin-top: auto;
-        }
+          .btn-theme {
+            // width: 100%;
+            text-align: center;
+            margin-top: auto;
+            
+          }
+        
+
       }
       .features-grid {
         display: grid;
@@ -1275,6 +1284,7 @@ main {
   
           .date-box{
             position: absolute;
+    
             background-color: #f9d783;
             width: 65px;
             line-height: 0;
