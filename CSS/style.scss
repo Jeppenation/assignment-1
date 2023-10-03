@@ -1259,7 +1259,7 @@ main {
           padding-bottom: 30px;
 
           @media (min-width: 1180px) {
-            text-align: left;
+            // text-align: left;
             font-size: 40px;
             padding-top: 40px;
           }
@@ -1270,6 +1270,12 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 10px;
+
+        @media (min-width: 1180px) {
+          flex-direction: row;
+          gap: 10px;
+        }
 
         .signup-box {
           display: flex;

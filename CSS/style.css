@@ -1017,7 +1017,6 @@ main .signup-section .container .signup-title h2 {
 }
 @media (min-width: 1180px) {
   main .signup-section .container .signup-title h2 {
-    text-align: left;
     font-size: 40px;
     padding-top: 40px;
   }
@@ -1027,6 +1026,13 @@ main .signup-section .container .signup-box-class {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+}
+@media (min-width: 1180px) {
+  main .signup-section .container .signup-box-class {
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 main .signup-section .container .signup-box-class .signup-box {
   display: flex;
