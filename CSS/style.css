@@ -1056,3 +1056,106 @@ main .signup-section .container .signup-box-class .signup-box input {
   margin-left: 5px;
   outline: none;
 }
+
+footer {
+  background-color: #0e1021;
+}
+footer .container .footer-sections {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (min-width: 1180px) {
+  footer .container .footer-sections {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo company helpl resources link";
+    padding-top: 130px;
+    padding-bottom: 100px;
+  }
+}
+footer .container .footer-sections .logo-text {
+  grid-area: logo;
+  flex: 0.5;
+}
+footer .container .footer-sections .company-links {
+  grid-area: company;
+}
+footer .container .footer-sections .help-links {
+  grid-area: helpl;
+}
+footer .container .footer-sections .help-links h3 {
+  margin-left: 10px;
+}
+footer .container .footer-sections .resources {
+  grid-area: resources;
+}
+footer .container .footer-sections .link {
+  grid-area: link;
+}
+footer .container .footer-sections .footer-section {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .footer-sections .footer-section img {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+footer .container .footer-sections .footer-section h3 {
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1180px) {
+  footer .container .footer-sections .footer-section h3 {
+    font-size: 22px;
+  }
+}
+footer .container .footer-sections .footer-section a {
+  color: rgba(255, 255, 255, 0.7450980392);
+  text-decoration: none;
+  font-size: 14px;
+}
+footer .container .footer-sections .footer-section p {
+  font-size: 10px;
+}
+@media (min-width: 1180px) {
+  footer .container .footer-sections .footer-section p {
+    font-size: 16px;
+  }
+}
+footer .container .footer-sections .logo-text p {
+  color: rgba(255, 255, 255, 0.7450980392);
+}
+footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.168627451);
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+footer .container p {
+  color: rgba(255, 255, 255, 0.7450980392);
+}
+footer .container .socialmedia a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+footer .container .socialmedia a:hover {
+  color: #707070;
+}
