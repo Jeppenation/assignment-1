@@ -250,6 +250,13 @@ header .container .menu nav .btn-login {
 
 main .showcase {
   background-color: #f0efe9;
+  position: relative;
+}
+main .showcase #vector5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }
 main .showcase .container {
   display: flex;
@@ -260,6 +267,7 @@ main .showcase .container .content {
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
+  z-index: 0;
 }
 @media (min-width: 1200px) {
   main .showcase .container .content {
@@ -701,6 +709,24 @@ main .our-services .container .os-boxes .os-box:hover .arrow-btn i {
 }
 main .why-choose-us {
   margin-top: 50px;
+  position: relative;
+}
+@media (min-width: 1180px) {
+  main .why-choose-us .wcu-overlaybox {
+    display: block;
+    background-color: #f0efe9;
+    height: 425px;
+    width: 600px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+@media (min-width: 1650px) {
+  main .why-choose-us .wcu-overlaybox {
+    width: 1000px;
+  }
 }
 @media (min-width: 1180px) {
   main .why-choose-us .container {
@@ -717,22 +743,6 @@ main .why-choose-us {
 }
 main .why-choose-us .container .wcu-right {
   flex: 1.2;
-}
-main .why-choose-us .container .wcu-right .wcu-image {
-  position: relative;
-}
-main .why-choose-us .container .wcu-right .wcu-image .wcu-overlaybox {
-  background-color: #f0efe9;
-  position: absolute;
-  z-index: -1;
-}
-@media (min-width: 1180px) {
-  main .why-choose-us .container .wcu-right .wcu-image .wcu-overlaybox {
-    padding: 200px 400px;
-    left: -100px;
-    top: 130px;
-    z-index: -1;
-  }
 }
 main .why-choose-us .container .wcu-right .wcu-image img {
   width: 100%;
@@ -1078,6 +1088,14 @@ main .signup-section .container .signup-box-class .signup-box input {
 
 footer {
   background-color: #0e1021;
+  position: relative;
+}
+footer #vector4 {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  color: #666666;
+  z-index: 0;
 }
 footer .container .footer-sections {
   color: #fff;
@@ -1164,6 +1182,7 @@ footer .container {
   align-items: center;
   margin-top: 25px;
   margin-bottom: 35px;
+  z-index: 1;
 }
 footer .container p {
   color: rgba(255, 255, 255, 0.7450980392);

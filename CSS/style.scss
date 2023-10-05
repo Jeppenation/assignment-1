@@ -310,6 +310,17 @@ main {
   .showcase {
     background-color: #f0efe9;
 
+    position: relative;
+
+    #vector5{
+      position: absolute;
+
+      bottom: 0;
+      left:0;
+
+      z-index: 0;
+    }
+
     // since we have content, and img under content, this acts as a parent class for them.
     .container {
       // we wanted the content to the left, and the img to the right. So we made it a flexbox
@@ -322,6 +333,8 @@ main {
         padding-top: 40px;
         padding-bottom: 40px;
         text-align: center;
+
+        z-index: 0;
 
         @media (min-width: 1200px) {
           text-align: left;
@@ -906,6 +919,34 @@ main {
 
   .why-choose-us {
     margin-top: 50px;
+    position: relative;
+
+    .wcu-overlaybox {
+      // display: none;
+      // background-color: #f0efe9;
+      // height: 425px;
+      // width: 1000px;
+      // position: absolute;
+      // right: 0;
+      // bottom: 0;
+      // z-index: -1;
+
+      @media (min-width: 1180px) {
+        display: block;
+        background-color: #f0efe9;
+        height: 425px;
+        width: 600px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+
+      @media (min-width: 1650px) {
+        width: 1000px;
+        
+      }
+    }
 
     .container {
       @media (min-width: 1180px) {
@@ -923,24 +964,7 @@ main {
         flex: 1.2;
 
         .wcu-image {
-          position: relative;
-
-          .wcu-overlaybox {
-            background-color: #f0efe9;
-            // padding: 200px 400px;
-            position: absolute;
-            // left: -100px;
-            // top: 130px;
-            z-index: -1;
-
-            @media (min-width: 1180px) {
-              // background-color: #f0efe9 ;
-              padding: 200px 400px;
-              left: -100px;
-              top: 130px;
-              z-index: -1;
-            }
-          }
+          
           img {
             width: 100%;
             height: auto;
@@ -1332,6 +1356,17 @@ main {
 }
 footer {
   background-color: #0e1021;
+  position: relative;
+
+  #vector4{
+    position: absolute;
+
+    bottom: 100px;
+    right:0;
+
+    color: #666666;
+    z-index: 0;
+  }
 
   .container {
     .footer-sections {
@@ -1445,6 +1480,8 @@ footer {
 
     margin-top: 25px;
     margin-bottom: 35px;
+
+    z-index: 1;
     p {
       color: #ffffffbe;
     }
