@@ -712,6 +712,20 @@ main {
   .our-services {
     //sets the background for the whole section
     background-color: #f0efe9;
+    position: relative;
+
+    #vector1{
+      position: absolute;
+
+      bottom: -80px;
+      right: 0;
+    }
+
+    #vector2{
+      position: absolute;
+      bottom: -40px;
+      right: 0;
+    }
 
     .container {
       //removes the padding of container
@@ -722,6 +736,7 @@ main {
       //to fill out the bottom abit
       padding-bottom: 60px;
       // border: 1px solid black;
+      z-index: 0;
 
       .center-content {
         // Below is the styling for the button below the boxes
@@ -730,6 +745,8 @@ main {
           text-decoration: none;
           text-align: center;
           border: 1px solid #191919;
+
+          z-index: 1;
 
           // to make the border more rounder
           border-radius: 60px;
@@ -1236,6 +1253,15 @@ main {
   }
   .signup-section {
     background-color: #f0efe9;
+    position: relative;
+
+    #vector3{
+      position: absolute;
+
+      right: 0;
+      bottom: 60px;
+    }
+    
     .container {
       background-color: #f0efe9;
 
@@ -1338,7 +1364,7 @@ footer {
 
       .logo-text {
         grid-area: logo;
-        flex: 0.5;
+        flex: 0.2;
       }
       .company-links {
         grid-area: company;

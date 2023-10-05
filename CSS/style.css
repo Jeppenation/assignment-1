@@ -575,17 +575,30 @@ main .about-company .container .about-company-text .ac-buttons .btn-play:hover {
 }
 main .our-services {
   background-color: #f0efe9;
+  position: relative;
+}
+main .our-services #vector1 {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+}
+main .our-services #vector2 {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
 }
 main .our-services .container {
   padding: 0;
   background-color: #f0efe9;
   padding-bottom: 60px;
+  z-index: 0;
 }
 main .our-services .container .center-content .browse-btn {
   color: #191919;
   text-decoration: none;
   text-align: center;
   border: 1px solid #191919;
+  z-index: 1;
   border-radius: 60px;
   padding: 20px 50px 20px;
   background-color: #f0efe9;
@@ -994,6 +1007,12 @@ main .article-news .container .news-articles .news .date-box {
 }
 main .signup-section {
   background-color: #f0efe9;
+  position: relative;
+}
+main .signup-section #vector3 {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
 }
 main .signup-section .container {
   background-color: #f0efe9;
@@ -1082,7 +1101,7 @@ footer .container .footer-sections {
 }
 footer .container .footer-sections .logo-text {
   grid-area: logo;
-  flex: 0.5;
+  flex: 0.2;
 }
 footer .container .footer-sections .company-links {
   grid-area: company;
