@@ -1478,8 +1478,8 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 25px;
-    margin-bottom: 35px;
+    // margin-top: 25px;
+    // margin-bottom: 35px;
 
     z-index: 1;
     p {
@@ -1498,5 +1498,137 @@ footer {
         }
       }
     }
+  }
+}
+
+// Down below is the SCSS for contacts page
+
+
+.contactpage{
+  .showcase{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    position: relative;
+
+    z-index: 0;
+
+    #vector5{
+
+      position: absolute;
+      z-index: -1;
+    }
+
+    .container{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .contact-text{
+        h1{
+          color: #191919;
+          font-family: "DM Sans", sans-serif;
+          font-weight: 700;
+          font-size: 56px;
+          text-align: center;
+        
+        }
+
+        .breadcrumbs{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+
+          .home{
+            font-weight:300;
+          }
+        }
+  
+
+      }
+
+    }
+  }
+
+  .contact-options{
+
+    .container{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      flex-direction: column;
+
+      @media (min-width: 1180px) {
+
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+      }
+            
+
+      .contact-box{
+
+        margin-top: 50px;
+
+        width: 350px;
+        height: 200px;
+
+        border: 1px solid #19191936;
+        padding-top: 50px;
+
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 1200px) {
+          width: 420px;
+          height: 210px;
+        }
+
+        .contact-box-icon{
+          margin-right: 20px;
+          
+          i{
+            border: 1px solid black;
+            // padding: 10px 13px;
+            padding: 20px;
+            color: #fff;
+            background-color: #191919;
+            border-radius: 50%;
+
+            font-size: 22px;
+          }
+        } 
+        
+        .contact-box-text{
+         
+          h2{
+            font-size: 22px;
+            font-weight: 700;
+
+            margin-bottom: 20px;
+          }
+          p{
+            
+            font-size: 18px;
+          }
+
+        }
+        
+      }
+    }
+
+  }
+
+  .contact-map{
+
+   img{
+    width: 100%;
+    height: auto;
+   }
+
   }
 }
