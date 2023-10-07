@@ -312,11 +312,11 @@ main {
 
     position: relative;
 
-    #vector5{
+    #vector5 {
       position: absolute;
 
       bottom: 0;
-      left:0;
+      left: 0;
 
       z-index: 0;
     }
@@ -727,14 +727,14 @@ main {
     background-color: #f0efe9;
     position: relative;
 
-    #vector1{
+    #vector1 {
       position: absolute;
 
       bottom: -80px;
       right: 0;
     }
 
-    #vector2{
+    #vector2 {
       position: absolute;
       bottom: -40px;
       right: 0;
@@ -944,7 +944,6 @@ main {
 
       @media (min-width: 1650px) {
         width: 1000px;
-        
       }
     }
 
@@ -964,7 +963,6 @@ main {
         flex: 1.2;
 
         .wcu-image {
-          
           img {
             width: 100%;
             height: auto;
@@ -1279,13 +1277,13 @@ main {
     background-color: #f0efe9;
     position: relative;
 
-    #vector3{
+    #vector3 {
       position: absolute;
 
       right: 0;
       bottom: 60px;
     }
-    
+
     .container {
       background-color: #f0efe9;
 
@@ -1358,11 +1356,11 @@ footer {
   background-color: #0e1021;
   position: relative;
 
-  #vector4{
+  #vector4 {
     position: absolute;
 
     bottom: 100px;
-    right:0;
+    right: 0;
 
     color: #666666;
     z-index: 0;
@@ -1503,9 +1501,8 @@ footer {
 
 // Down below is the SCSS for contacts page
 
-
-.contactpage{
-  .showcase{
+.contactpage {
+  .showcase {
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -1513,49 +1510,41 @@ footer {
 
     z-index: 0;
 
-    #vector5{
-
+    #vector5 {
       position: absolute;
       z-index: -1;
     }
 
-    .container{
-
+    .container {
       display: flex;
       align-items: center;
       justify-content: center;
 
-      .contact-text{
-        h1{
+      .contact-text {
+        h1 {
           color: #191919;
           font-family: "DM Sans", sans-serif;
           font-weight: 700;
           font-size: 56px;
           text-align: center;
-        
         }
 
-        .breadcrumbs{
+        .breadcrumbs {
           display: flex;
           justify-content: center;
           align-items: center;
           gap: 25px;
 
-          .home{
-            font-weight:300;
+          .home {
+            font-weight: 300;
           }
         }
-  
-
       }
-
     }
   }
 
-  .contact-options{
-
-    .container{
-
+  .contact-options {
+    .container {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1563,15 +1552,12 @@ footer {
       flex-direction: column;
 
       @media (min-width: 1180px) {
-
         flex-direction: row;
         justify-content: space-around;
-        gap: 20px;
+        gap: 40px;
       }
-            
 
-      .contact-box{
-
+      .contact-box {
         margin-top: 50px;
 
         width: 350px;
@@ -1588,10 +1574,10 @@ footer {
           height: 210px;
         }
 
-        .contact-box-icon{
+        .contact-box-icon {
           margin-right: 20px;
-          
-          i{
+
+          i {
             border: 1px solid black;
             // padding: 10px 13px;
             padding: 20px;
@@ -1601,34 +1587,71 @@ footer {
 
             font-size: 22px;
           }
-        } 
-        
-        .contact-box-text{
-         
-          h2{
+        }
+
+        .contact-box-text {
+          h2 {
             font-size: 22px;
             font-weight: 700;
 
             margin-bottom: 20px;
           }
-          p{
-            
+          p {
             font-size: 18px;
           }
-
         }
-        
       }
     }
-
   }
 
-  .contact-map{
+  .contact-map {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 
-   img{
-    width: 100%;
-    height: auto;
-   }
+  .message-form-class {
+    margin-top: 80px;
+    margin-bottom: 120px;
 
+    .container {
+      background-color: #f0efe9;
+      padding: 60px 30px;
+
+      h2 {
+        font-family: "Dm Sans", sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+      }
+
+      form {
+        .form-input {
+          display: block;
+          width: 100%;
+          padding: 15px 30px;
+          color: #7f7f7f;
+
+          border: 1px solid #f0efe9;
+          border-radius: 25px;
+          outline: none;
+        }
+
+        .textarea {
+          resize: none;
+          height: 160px;
+        }
+
+        input:focus,
+        textarea:focus {
+          border: 1px solid #c2c1bca8;
+        }
+
+        .btn-theme {
+          text-align: center;
+        }
+      }
+    }
   }
 }

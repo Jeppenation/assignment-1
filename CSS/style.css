@@ -1237,7 +1237,7 @@ footer .container .socialmedia a:hover {
   .contactpage .contact-options .container {
     flex-direction: row;
     justify-content: space-around;
-    gap: 20px;
+    gap: 40px;
   }
 }
 .contactpage .contact-options .container .contact-box {
@@ -1277,4 +1277,38 @@ footer .container .socialmedia a:hover {
 .contactpage .contact-map img {
   width: 100%;
   height: auto;
+}
+.contactpage .message-form-class {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+.contactpage .message-form-class .container {
+  background-color: #f0efe9;
+  padding: 60px 30px;
+}
+.contactpage .message-form-class .container h2 {
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+}
+.contactpage .message-form-class .container form .form-input {
+  display: block;
+  width: 100%;
+  padding: 15px 30px;
+  color: #7f7f7f;
+  border: 1px solid #f0efe9;
+  border-radius: 25px;
+  outline: none;
+}
+.contactpage .message-form-class .container form .textarea {
+  resize: none;
+  height: 160px;
+}
+.contactpage .message-form-class .container form input:focus,
+.contactpage .message-form-class .container form textarea:focus {
+  border: 1px solid rgba(194, 193, 188, 0.6588235294);
+}
+.contactpage .message-form-class .container form .btn-theme {
+  text-align: center;
 }
