@@ -52,6 +52,9 @@ body {
   // border-radius creates a more rounder form of a button
   border-radius: 25px;
 
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+
   // settings for when we hover over the button
   &:hover {
     background-color: #191919;
@@ -81,6 +84,9 @@ body {
   // border-radius creates a more rounder form of a button
   border-radius: 25px;
 
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+
   // settings for when we hover over the button
   &:hover {
     background-color: #fff;
@@ -104,6 +110,9 @@ body {
   font-weight: 600;
   border-radius: 25px;
 
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+
   &:hover {
     background-color: #191919;
     border: 1px solid #191919;
@@ -121,6 +130,10 @@ body {
   padding: 20px 20px;
   border: 1px solid #191919;
   border-radius: 50%;
+
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+
 }
 
 .section-title {
@@ -769,8 +782,8 @@ main {
           margin-top: 50px;
 
           // adds some transition styling ot it, it looked best (imo) with 0.1s
-          transition: background-color 0.1s ease;
-          transition: color 0.1s ease;
+          transition: background-color 0.3s ease;
+          transition: color 0.3s ease;
 
           // semi-bold
           font-weight: 600;
@@ -896,10 +909,6 @@ main {
             width: 10%;
             height: 2px;
             background-color: #191919;
-
-            // adjusted the height of the top-bar
-            // margin-top: 50px;
-            // margin-bottom: 40px;
           }
 
           &:hover {
@@ -922,14 +931,6 @@ main {
     position: relative;
 
     .wcu-overlaybox {
-      // display: none;
-      // background-color: #f0efe9;
-      // height: 425px;
-      // width: 1000px;
-      // position: absolute;
-      // right: 0;
-      // bottom: 0;
-      // z-index: -1;
 
       @media (min-width: 1180px) {
         display: block;
@@ -1037,7 +1038,6 @@ main {
     .container {
       padding-bottom: 120px;
       padding-left: 10px;
-      // padding-right: 20px;
 
       .section-title {
         position: relative;
@@ -1059,8 +1059,8 @@ main {
         }
 
         .btn-transparent {
-          transition: background 0.2s ease;
-          transition: color 0.2s ease;
+          transition: background 0.3s ease;
+          transition: color 0.3s ease;
 
           &:hover {
             background-color: #fff;
@@ -1125,7 +1125,6 @@ main {
 
       .what-our-client-say {
         background-color: #fff;
-        // border: 1px solid black;
 
         .section-title {
           text-align: center;
@@ -1210,6 +1209,11 @@ main {
 
         h2 {
           font-size: 35px;
+        }
+
+        a{
+          transition: background-color 0.3s ease;
+          transition: color 0.3s ease;
         }
 
         @media (min-width: 1170px) {
@@ -1325,6 +1329,12 @@ main {
           gap: 10px;
         }
 
+        a{
+          transition: background-color 0.3s ease;
+          transition: color 0.3s ease;
+        }
+
+
         .signup-box {
           display: flex;
           background-color: #fff;
@@ -1359,7 +1369,7 @@ footer {
   #vector4 {
     position: absolute;
 
-    bottom: 100px;
+    bottom: 40px;
     right: 0;
 
     color: #666666;
@@ -1374,11 +1384,6 @@ footer {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      // grid-template-columns: 1fr 1fr 1fr;
-
-      // grid-template-areas:
-      //   "logo company helpl"
-      //   "resources link n";
 
       gap: 10px;
 
@@ -1403,11 +1408,11 @@ footer {
         grid-area: company;
 
         @media (min-width: 991px) {
-          // margin-left: 100px;
+          
         }
 
         @media (min-width: 1180px) {
-          // margin-left: 40px;
+          
         }
       }
       .help-links {
@@ -1446,6 +1451,11 @@ footer {
           color: #ffffffbe;
           text-decoration: none;
           font-size: 14px;
+          transition: color 0.2s ease;
+        }
+
+        a:hover{
+          color: #ffffff7c;
         }
 
         p {
@@ -1470,14 +1480,17 @@ footer {
     background-color: #ffffff2b;
   }
 
+  
+
   .container {
+
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    // margin-top: 25px;
-    // margin-bottom: 35px;
+   
 
     z-index: 1;
     p {
@@ -1579,7 +1592,7 @@ footer {
 
           i {
             border: 1px solid black;
-            // padding: 10px 13px;
+            
             padding: 20px;
             color: #fff;
             background-color: #191919;

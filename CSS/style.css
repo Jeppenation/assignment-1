@@ -39,6 +39,8 @@ body {
   padding: 12px 30px;
   font-weight: 600;
   border-radius: 25px;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .btn-theme:hover {
   background-color: #191919;
@@ -58,6 +60,8 @@ body {
   padding: 12px 30px;
   font-weight: 600;
   border-radius: 25px;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .btn-black:hover {
   background-color: #fff;
@@ -77,6 +81,8 @@ body {
   padding: 12px 30px;
   font-weight: 600;
   border-radius: 25px;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .btn-transparent:hover {
   background-color: #191919;
@@ -93,6 +99,8 @@ body {
   padding: 20px 20px;
   border: 1px solid #191919;
   border-radius: 50%;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .section-title {
@@ -611,8 +619,8 @@ main .our-services .container .center-content .browse-btn {
   padding: 20px 50px 20px;
   background-color: #f0efe9;
   margin-top: 50px;
-  transition: background-color 0.1s ease;
-  transition: color 0.1s ease;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
   font-weight: 600;
 }
 main .our-services .container .center-content .browse-btn i {
@@ -830,8 +838,8 @@ main .team .container .section-title h2 {
   }
 }
 main .team .container .section-title .btn-transparent {
-  transition: background 0.2s ease;
-  transition: color 0.2s ease;
+  transition: background 0.3s ease;
+  transition: color 0.3s ease;
 }
 main .team .container .section-title .btn-transparent:hover {
   background-color: #fff;
@@ -965,6 +973,10 @@ main .article-news .container .section-title {
 main .article-news .container .section-title h2 {
   font-size: 35px;
 }
+main .article-news .container .section-title a {
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+}
 @media (min-width: 1170px) {
   main .article-news .container .section-title {
     justify-content: start;
@@ -1063,6 +1075,10 @@ main .signup-section .container .signup-box-class {
     gap: 10px;
   }
 }
+main .signup-section .container .signup-box-class a {
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+}
 main .signup-section .container .signup-box-class .signup-box {
   display: flex;
   background-color: #fff;
@@ -1092,7 +1108,7 @@ footer {
 }
 footer #vector4 {
   position: absolute;
-  bottom: 100px;
+  bottom: 40px;
   right: 0;
   color: #666666;
   z-index: 0;
@@ -1158,6 +1174,10 @@ footer .container .footer-sections .footer-section a {
   color: rgba(255, 255, 255, 0.7450980392);
   text-decoration: none;
   font-size: 14px;
+  transition: color 0.2s ease;
+}
+footer .container .footer-sections .footer-section a:hover {
+  color: rgba(255, 255, 255, 0.4862745098);
 }
 footer .container .footer-sections .footer-section p {
   font-size: 10px;
